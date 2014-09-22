@@ -30,7 +30,7 @@ You can include BMaD using our maven repository:
 ```
 <repository>
 	<id>jgu</id>
-	<name>jgu-internal</name>
+	<name>jgu</name>
 	<url>http://fantomas.zdv.uni-mainz.de:8080/repository/internal</url>
 </repository>
 ```
