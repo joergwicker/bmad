@@ -23,7 +23,7 @@ We use maven as a build tool, so just run
 mvn clean install
 ```
 
-to compile build BMaD. 
+to build BMaD. 
 
 You can include BMaD using our maven repository:
 
