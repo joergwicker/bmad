@@ -50,7 +50,10 @@ If you want to cite BMaD in your publication, please cite the
 following ECML/PKDD paper: 
 
 ```
-Tyukin, Andrey, Stefan Kramer, and Jörg Wicker. "BMaD–A Boolean Matrix Decomposition Framework." Machine Learning and Knowledge Discovery in Databases. Springer Berlin Heidelberg, 2014. 481-484.
+Tyukin, Andrey, Stefan Kramer, and Jörg Wicker. 
+"BMaD–A Boolean Matrix Decomposition Framework." 
+Machine Learning and Knowledge Discovery in Databases. 
+Springer Berlin Heidelberg, 2014. 481-484.
 ```
 Bibtex entry:
 
