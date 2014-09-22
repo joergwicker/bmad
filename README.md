@@ -1,3 +1,5 @@
+* BMaD
+
 BMaD
 ====
 
@@ -12,6 +14,35 @@ main advantages of the framework are its modular approach and hence
 the flexible combination of the steps of a Boolean matrix
 decomposition and the capability of handling missing values. The
 framework is licensed under the GPLv3.  
+
+
+Build
+=====
+
+We use maven as a build tool, so just run
+
+```
+mvn clean install
+```
+
+to compile build BMaD. 
+
+You can include BMaD using our maven repository:
+
+```
+<repository>
+	<id>jgu</id>
+	<name>jgu-internal</name>
+	<url>http://fantomas.zdv.uni-mainz.de:8080/repository/internal</url>
+</repository>
+```
+```
+<dependency>
+	<groupId>org.kramerlab</groupId>
+	<artifactId>bmad</artifactId>
+	<version>2.4</version>
+</dependency>
+```
 
 
 Citation
