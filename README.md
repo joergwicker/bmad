@@ -31,7 +31,7 @@ You can include BMaD using our maven repository:
 <repository>
 	<id>jgu</id>
 	<name>jgu</name>
-	<url>http://fantomas.informatik.uni-mainz.de:8080/repository/internal</url>
+	<url>http://fantomas.informatik.uni-mainz.de/mvnrepo/repository</url>
 </repository>
 ```
 ```
