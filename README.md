@@ -25,15 +25,8 @@ mvn clean install
 
 to build BMaD. 
 
-You can include BMaD using our maven repository:
+BMaD is in Maven Central, so you can just add this dependency to your pom.xml:
 
-```
-<repository>
-	<id>jgu</id>
-	<name>jgu</name>
-	<url>http://fantomas.informatik.uni-mainz.de/mvnrepo/repository</url>
-</repository>
-```
 ```
 <dependency>
 	<groupId>org.kramerlab</groupId>
