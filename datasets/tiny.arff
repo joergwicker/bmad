@@ -1,0 +1,12 @@
+@relation tinyRelation
+
+@attribute a1 {0, 1}
+@attribute a2 {0, 1}
+@attribute a3 {0, 1}
+
+@data
+0,1,1
+0,1,0
+0,0,1
+1,0,1
+1,1,0
