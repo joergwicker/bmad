@@ -36,6 +36,15 @@ BMaD is in Maven Central, so you can just add this dependency to your pom.xml:
 ```
 
 
+Demo
+====
+
+The demo class can be executed using:
+
+```
+mvn exec:java -Dexec.mainClass="org.kramerlab.bmad.demo.Demo"
+```
+
 Citation
 ========
 
