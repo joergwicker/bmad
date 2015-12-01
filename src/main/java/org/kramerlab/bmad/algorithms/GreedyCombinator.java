@@ -17,7 +17,7 @@ public abstract class GreedyCombinator extends Combinator {
 			BooleanMatrix basisRow);
 
 	@Override
-	public BooleanMatrix combineRow(BooleanMatrix row, BooleanMatrix _,
+	public BooleanMatrix combineRow(BooleanMatrix row, BooleanMatrix bm,
 			BooleanMatrix basis, double onesWeight) {
 
 		int dim = basis.getHeight();

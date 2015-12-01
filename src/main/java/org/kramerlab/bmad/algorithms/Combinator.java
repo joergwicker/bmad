@@ -20,7 +20,7 @@ public abstract class Combinator {
 	 * @param basis
 	 *            the basis matrix (with basis patterns as rows)
 	 * @param onesWeight
-	 *            relative weight of 1 -> 0 errors
+	 *            relative weight of <code>1 -&gt; 0</code> errors
 	 * @return single row, that has a 0 or 1 entry for each basis row
 	 */
 	protected abstract BooleanMatrix combineRow(BooleanMatrix row,
@@ -40,7 +40,7 @@ public abstract class Combinator {
 	 * @param basis
 	 *            basis matrix
 	 * @param onesWeight
-	 *            relative weight of 1 -> 0 errors
+	 *            relative weight of <code>1 -&gt; 0</code> errors
 	 * @return combination matrix C (first factor)
 	 */
 	public BooleanMatrix combineMatrix(BooleanMatrix a,

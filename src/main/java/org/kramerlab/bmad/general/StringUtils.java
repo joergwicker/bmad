@@ -10,10 +10,10 @@ import java.util.*;
 public class StringUtils {
 
 	/**
-	 * Converts a string to a new, mutable list of Characters
+	 * Converts a string to a new, mutable list of Characters.
 	 * 
-	 * @param string
-	 * @return
+	 * @param string The string to be converted.
+	 * @return the list of characters.
 	 */
 	public static ArrayList<Character> toList(String string) {
 		ArrayList<Character> list = new ArrayList<Character>(string.length());
@@ -27,11 +27,11 @@ public class StringUtils {
 	 * Composes a String from the prefix, elements of an Iterable 
 	 * separated by the separator, and the suffix.
 	 * 
-	 * @param it
-	 * @param prefix
-	 * @param separator
-	 * @param suffix
-	 * @return
+	 * @param it the Iterable to compose the String of.
+	 * @param prefix the prefix to start the String with.
+	 * @param separator the sepearator for composing.
+	 * @param suffix the suffix to end the string with.
+	 * @return the resulting String.
 	 */
 	public static String mkString(Iterable<?> it, String prefix, String separator, String suffix) {
 		StringBuilder builder = new StringBuilder(prefix);
@@ -49,11 +49,11 @@ public class StringUtils {
 	}
 	
 	/**
-	 * Power-function in the free Monoid over Characters (AKA "Strings")
+	 * Power-function in the free Monoid over Characters (AKA "Strings").
 	 * 
-	 * @param str
-	 * @param n
-	 * @return
+	 * @param str the String to repeat.
+	 * @param n how often the string is repeated.
+	 * @return tge resulting string.
 	 */
 	public static String pow(String str, int n) {
 		StringBuilder b = new StringBuilder();

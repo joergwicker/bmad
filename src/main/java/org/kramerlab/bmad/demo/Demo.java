@@ -19,7 +19,7 @@ import weka.core.converters.ConverterUtils.DataSource;
  * Demonstrates the usage of boolean matrix decomposition on weka instances
  */
 public class Demo {
-	public static void main(String... _) throws Throwable {
+	public static void main(String... args) throws Throwable {
 		for (String file : new String[] { 
 		        // "datasets/kinase_labels.arff",
 				// "datasets/labels.nci.disc.noid.arff", 

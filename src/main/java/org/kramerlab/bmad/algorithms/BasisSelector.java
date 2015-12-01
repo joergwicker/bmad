@@ -20,7 +20,7 @@ public interface BasisSelector {
 	 * @param dimension
 	 *            number of candidate rows to be included into the basis matrix
 	 * @param onesWeight
-	 *            relative weight of 1 -> 0 errors, opposed to 0 -> 1 errors
+	 *            relative weight of <code>1 -&gt; 0</code> errors, opposed to <code>0 -&gt; 1</code> errors
 	 * @return (combination, basis)
 	 */
 	Tuple<BooleanMatrix, BooleanMatrix> selectBasis(BooleanMatrix candidates,

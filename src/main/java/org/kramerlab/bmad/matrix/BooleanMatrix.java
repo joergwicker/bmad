@@ -27,6 +27,12 @@ public class BooleanMatrix {
     public static final byte UNKNOWN = 1;
     public static final byte FALSE = 0;
 
+    /**
+     * Negation of a byte.
+     *
+     * @param b the bute to negate
+     * @return the negated byte
+     */
     public static byte not(byte b) {
         switch(b) {
             case TRUE: return FALSE;
@@ -222,14 +228,14 @@ public class BooleanMatrix {
 		}
 		return m;
 	}
-	
+    
 	/**
 	 * Calculates the reconstruction error between this matrix and the
 	 * reconstruction.
 	 *  
 	 * @param reconstruction some other matrix
-	 * @param onesWeight weight of <code>1->0</code> errors 
-	 * relative to <code>0->1</code> errors
+	 * @param onesWeight weight of <code>1-&gt;0</code> errors 
+	 * relative to <code>0-&gt;1</code> errors
 	 * 
 	 * @return
 	 */
@@ -252,19 +258,19 @@ public class BooleanMatrix {
 	}
 	
 	/**
-	 * Calculates the relative <code>1->0</code> and <code>0->1</code> 
+	 * Calculates the relative <code>1-&gt;0</code> and <code>0-&gt;1</code> 
 	 * reconstruction error, that is, the total error divided by total
 	 * maximum possible error.
 	 * 
 	 * Assumes, that there are no unknowns in the reconstruction.
 	 * The total weight equals <code>#0 + onesWeight * #1</code>.
-	 * Each <code>1->0</code> error costs <code>onesWeight</code>.
-	 * Each <code>0->1</code> error costs <code>1</code>.
+	 * Each <code>1-&gt;0</code> error costs <code>onesWeight</code>.
+	 * Each <code>0-&gt;1</code> error costs <code>1</code>.
 	 * 
 	 * @param reconstruction
 	 * @param onesWeight
 	 * @return 
-	 *   tuple with relative <code>1->0</code> and <code>0->1</code> errors
+	 *   tuple with relative <code>1-&gt;0</code> and <code>0-&gt;1</code> errors
 	 */
 	public Tuple<Double, Double> relativeOneZeroZeroOneReconstructionError(BooleanMatrix reconstruction, double onesWeight) {
 		double oneZeroError = 0;
@@ -295,7 +301,7 @@ public class BooleanMatrix {
 	 * (error divided by the maximum possible error).
 	 * 
 	 * @param reconstruction
-	 * @param onesWeight relative weight of <code>1->0</code> errors
+	 * @param onesWeight relative weight of <code>1-&gt;0</code> errors
 	 * @return total relative error
 	 */
 	public double relativeReconstructionError(BooleanMatrix reconstruction, double onesWeight) {
