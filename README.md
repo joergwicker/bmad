@@ -13,6 +13,11 @@ the flexible combination of the steps of a Boolean matrix
 decomposition and the capability of handling missing values. The
 framework is licensed under the GPLv3.  
 
+API
+===
+
+Generated Javadoc can be found [here http://joergwicker.github.io/bmad/apidocs/].
+
 
 Build
 =====
@@ -34,6 +39,7 @@ BMaD is in Maven Central, so you can just add this dependency to your pom.xml:
 	<version>2.4</version>
 </dependency>
 ```
+
 
 
 Demo
