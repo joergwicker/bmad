@@ -16,7 +16,7 @@ framework is licensed under the GPLv3.
 API
 ===
 
-Generated Javadoc can be found [here http://joergwicker.github.io/bmad/apidocs/].
+Generated Javadoc can be found at http://joergwicker.github.io/bmad/apidocs/.
 
 
 Build
