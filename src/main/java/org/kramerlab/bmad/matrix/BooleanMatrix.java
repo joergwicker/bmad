@@ -372,6 +372,48 @@ public class BooleanMatrix {
 		return instances;
 	}
 
+    public double getDensity(){
+	double count1 = 0.0;
+	double count0 = 0.0;
+
+	for (byte[] arr : rows) {
+	    for (byte val : arr) {
+		if (val == TRUE) {
+		    count1 ++;
+		}
+		if (val == FALSE) {
+		    count0 ++;
+		}
+
+	    }
+
+	}
+	return count1/(count1+count0);
+    }
+
+    public double getMissingDensity(){
+	double count1 = 0.0;
+	double count0 = 0.0;
+	double countMiss = 0.0;
+
+	for (byte[] arr : rows) {
+	    for (byte val : arr) {
+		if (val == TRUE) {
+		    count1 ++;
+		}
+		if (val == FALSE) {
+		    count0 ++;
+		}
+		if (val == UNKNOWN) {
+		    countMiss ++;
+		}
+
+	    }
+
+	}
+	return countMiss/(count1+count0+countMiss);
+    }
+    
 	/**
 	 * Map-method, restricted to boolean matrices as output.
 	 * Creates a new matrix, that consists of point-wise applications
