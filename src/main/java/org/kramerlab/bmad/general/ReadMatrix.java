@@ -104,7 +104,7 @@ public class ReadMatrix{
 	    line = bur.readLine();
 	}
 
-	byte[][] mat = new byte[sizeX][sizeY];
+	byte[][] mat = new byte[sizeX+1][sizeY+1];
 	for (int i = 0; i < mat.length; i ++) {
 	    for (int j = 0; j < mat.length; j ++) {
 		mat[i][j] = BooleanMatrix.UNKNOWN;
