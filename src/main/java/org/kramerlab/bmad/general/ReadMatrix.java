@@ -209,7 +209,7 @@ public class ReadMatrix{
 	    }
 	    
 	    
-	    mapping.put(x,y);
+	    mapping.put(xMap.get(linespl[0]),yMap.get(linespl[1]));
 	    
 	    line = bur.readLine();
 	}
