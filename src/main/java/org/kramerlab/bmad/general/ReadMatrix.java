@@ -202,7 +202,7 @@ public class ReadMatrix{
 		sizeX++;
 	    }
 
-	    if(xMap.get(linespl[1]) == null){
+	    if(yMap.get(linespl[1]) == null){
 		yMap.put(linespl[1], sizeY);
 		sizeY++;
 		
