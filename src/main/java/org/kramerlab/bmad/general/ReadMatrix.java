@@ -72,6 +72,11 @@ public class ReadMatrix{
 	String line = bur.readLine();
 	HashMap<Integer, Integer> mappingPos = new HashMap<Integer, Integer>();
 	HashMap<Integer, Integer> mappingNeg = new HashMap<Integer, Integer>();
+
+
+	HashMap<String, Integer> xMap = new HashMap<String, Integer>();
+	HashMap<String, Integer> yMap = new HashMap<String, Integer>();
+
 	
 	int sizeX = 0;
 	int sizeY = 0;
@@ -79,28 +84,35 @@ public class ReadMatrix{
 	while (line != null) {
 	    String[] linespl = line.split(" ");
 	    
-	    int x = Integer.parseInt(linespl[0]);
-	    int y = Integer.parseInt(linespl[1]);
+	    String x = linespl[0];
+	    String y = linespl[1];
+
+
+	    
+	    if(xMap.get(linespl[0]) == null){
+		xMap.put(linespl[0], sizeX);
+		sizeX++;
+	    }
+
+	    if(yMap.get(linespl[1]) == null){
+		yMap.put(linespl[1], sizeY);
+		sizeY++;
+		
+	    }
+	    
 	    if (linespl[2].equals("t")) {
-		mappingPos.put(x,y);
+		mappingPos.put(xMap.get(linespl[0]),
+			       xMap.get(linespl[1]));
 
 	    }
 	    if (linespl[2].equals("n")) {
-		mappingNeg.put(x,y);
+		mappingNeg.put(xMap.get(linespl[0]),
+			       xMap.get(linespl[1]));
 
-	    }
-
-
-
-	    if (x > sizeX) {
-		sizeX = x;
-	    }
-
-	    if (y > sizeY) {
-		sizeY = y;
 	    }
 
 	    
+
 	    line = bur.readLine();
 	}
 
@@ -172,6 +184,55 @@ public class ReadMatrix{
 	}
 	return new BooleanMatrix(data);
 
+    }
+
+
+    /**
+     * Reads matrix from sparse file. Each line in the file should be 
+     * &lt;rowid\gt; \lt;columnid\gt;
+     * @return Resulting Boolean matrix.
+     */
+    public static BooleanMatrix readSparseWithIDs(String location) throws FileNotFoundException, IOException{
+	BufferedReader bur = new BufferedReader(new FileReader(new File(location)));
+	String line = bur.readLine();
+	HashMap<Integer, Integer> mapping = new HashMap<Integer, Integer>();
+
+	int sizeX = 0;
+	int sizeY = 0;
+
+	HashMap<String, Integer> xMap = new HashMap<String, Integer>();
+	HashMap<String, Integer> yMap = new HashMap<String, Integer>();
+	
+	while (line != null) {
+	    String[] linespl = line.split(" ");
+
+	    int x = -1;
+	    int y = -1;
+	    
+	    if(xMap.get(linespl[0]) == null){
+		xMap.put(linespl[0], sizeX);
+		sizeX++;
+	    }
+
+	    if(yMap.get(linespl[1]) == null){
+		yMap.put(linespl[1], sizeY);
+		sizeY++;
+		
+	    }
+	    
+	    
+	    mapping.put(xMap.get(linespl[0]),yMap.get(linespl[1]));
+	    
+	    line = bur.readLine();
+	}
+
+	byte[][] mat = new byte[sizeX+1][sizeY+1];
+
+	for (Integer key : mapping.keySet()) {
+	    mat[key][mapping.get(key)] = BooleanMatrix.TRUE;
+	}
+	return new BooleanMatrix(mat);
+	
     }
 
     
