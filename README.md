@@ -34,9 +34,9 @@ BMaD is in Maven Central, so you can just add this dependency to your pom.xml:
 
 ```
 <dependency>
-	<groupId>org.kramerlab</groupId>
+	<groupId>nz.wicker</groupId>
 	<artifactId>bmad</artifactId>
-	<version>2.4</version>
+	<version>2.5</version>
 </dependency>
 ```
 
@@ -48,7 +48,7 @@ Demo
 The demo class can be executed using:
 
 ```
-mvn exec:java -Dexec.mainClass="org.kramerlab.bmad.demo.Demo"
+mvn exec:java -Dexec.mainClass="nz.wicker.bmad.demo.Demo"
 ```
 
 Citation

@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.kramerlab</groupId>
+  <groupId>nz.wicker</groupId>
   <artifactId>bmad</artifactId>
-  <version>2.5-SNAPSHOT</version>
+  <version>2.6</version>
   <packaging>jar</packaging>
 
   <name>BMaD</name>
@@ -14,10 +14,10 @@
   <developers>
     <developer>
       <name>Joerg Wicker</name>
-      <email>me@joerg-wicker.org</email>
-      <url>https://joerg-wicker.org</url>
-      <organization>Johannes Gutenberg University Mainz</organization>
-      <organizationUrl>http://www.dm.informatik.uni-mainz.de</organizationUrl>
+      <email>js@wicker.nz</email>
+      <url>https://wicker.nz</url>
+      <organization>University of Auckland</organization>
+      <organizationUrl>http://auckland.ac.nz</organizationUrl>
     </developer>
   </developers>
 
