@@ -36,7 +36,7 @@ BMaD is in Maven Central, so you can just add this dependency to your pom.xml:
 <dependency>
 	<groupId>nz.wicker</groupId>
 	<artifactId>bmad</artifactId>
-	<version>2.5</version>
+	<version>2.6</version>
 </dependency>
 ```
 
